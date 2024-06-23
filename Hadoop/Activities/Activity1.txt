@@ -5,14 +5,14 @@
 $ vim csvFile.csv
 
 # Make a textData folder on the HDFS 
- hdfs dfs -mkdir /user/tripti/textData
+ hdfs dfs -mkdir /user/surajha/textData
 
 # Copy the CSV file, csvFile.csv, into the textData folder in the HDFS
-  hdfs dfs -put ./csvFile.csv /user/tripti/textData
+  hdfs dfs -put ./csvFile.csv /user/surajha/textData
 
 # Copy the TXT file, txtFile.txt, into the textData folder in the HDFS
-  hdfs dfs -put ./txtFile.txt /user/tripti/textData
+  hdfs dfs -put ./txtFile.txt /user/surajha/textData
 
 # Use the stat command to get the file statistics   
-  hdfs dfs -stat "type:%F permissions:%a %u:%g size:%b name:%n" /user/tripti/textData/csvFile.csv
-  hdfs dfs -stat "type:%F permissions:%a %u:%g size:%b name:%n" /user/tripti/textData/txtFile
+  hdfs dfs -stat "type:%F permissions:%a %u:%g size:%b name:%n" /user/surajha/textData/csvFile.csv
+  hdfs dfs -stat "type:%F permissions:%a %u:%g size:%b name:%n" /user/surajha/textData/txtFile
